@@ -2,8 +2,7 @@
 @import url("fontawesome-all.min.css");
 
 /*
-	ZeroFour by HTML5 UP
-	html5up.net | @ajlkn
+	
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
@@ -1849,9 +1848,9 @@ input, select, textarea {
 /* Wrappers */
 
 	#header-wrapper {
-		background: url("images/bg01.png"), url("../../images/header.jpg");
+		background: url("images/dots-link.jpg"), url("../../images/header.jpg");
 		background-position: top left, center center;
-		background-size: auto, cover;
+		background-size: 100%, cover;
 		padding: 3em 0;
 	}
 

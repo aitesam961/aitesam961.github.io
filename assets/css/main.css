@@ -1448,7 +1448,7 @@ input, select, textarea {
 		text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
 		color: #fff !important;
 		text-decoration: none;
-		text-transform: uppercase;
+		text-transform: normal;
 		font-weight: 800;
 		font-size: 0.95em;
 		letter-spacing: 0.075em;
@@ -1899,12 +1899,19 @@ input, select, textarea {
 			background-position: top center, top left;
 		}
 
-/* Header */
+/*
+
+
+Header 
+
+
+
+*/
 
 	#header {
 		position: relative;
 		border-radius: 10px;
-		background: rgba(255, 255, 255, 0.1);
+		background: rgba(153, 12, 12, 0.1);
 		padding: 0.75em;
 		margin-bottom: 0;
 	}

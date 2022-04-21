@@ -877,7 +877,7 @@ header .fa {
 #about-us .thumbnail {
     padding: 0;
     border: none;
-    border-radius: 0;
+    border-radius: 200;
     object-fit: cover;
 }
 

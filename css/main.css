@@ -147,10 +147,7 @@ header .fa {
     background-size: cover;
 }
 
-.jumbotron h1{
-    color: #ffffff;
-    text-transform: uppercase;
-}
+.jumbotron h1,
 .jumbotron h2,
 .jumbotron h4 {
     color: #ffffff;

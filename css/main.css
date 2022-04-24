@@ -777,7 +777,7 @@ header .fa {
 }
 
 .footer-copyright p a {
-    color: #8dc63f;
+    color: #108a84;
 }
 
 .page-footer img {
@@ -805,7 +805,7 @@ header .fa {
 }
 
 .page-footer ul > li a:hover {
-    color: #8dc63f;
+    color: #108a84;
 }
 
 /*===============================
@@ -1297,8 +1297,8 @@ textarea.form-control {
 }
 
 .blog .bt .active {
-    background-color: #b4dc2d;
-    border: 1px solid #b4dc2d;
+    background-color: #108a84;
+    border: 1px solid #108a84;
     color: white;
     border-radius: 100px;
 }

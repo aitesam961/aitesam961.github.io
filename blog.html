@@ -84,26 +84,19 @@
                     <h3>Read Blog</h3>
                 </div>
             </div>
-        </div>    
-        <div id="ytplayer"></div>
-        <script>
-          // Load the IFrame Player API code asynchronously.
-          var tag = document.createElement('script');
-          tag.src = "https://www.youtube.com/player_api";
-          var firstScriptTag = document.getElementsByTagName('script')[0];
-          firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-        
-          // Replace the 'ytplayer' element with an <iframe> and
-          // YouTube player after the API code downloads.
-          var player;
-          function onYouTubePlayerAPIReady() {
-            player = new YT.Player('ytplayer', {
-              height: '360',
-              width: '640',
-              videoId: 'JsCCEnHJgYc'
-            });
-          }
-            </script>
+        </div> 
+
+        <!-- YouTube Video -->
+        <div align="centre">
+            <iframe id="existing-iframe-example"
+                width="360" height="240"
+                src="https://www.youtube.com/embed/JsCCEnHJgYc"
+                frameborder="0"
+                margin="auto"
+                style="border: solid 4px #5f9bb9">
+            </iframe>
+        </div>
+
         <hr>
         <div class="container">
             <!--/row-->

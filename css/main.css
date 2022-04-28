@@ -839,7 +839,7 @@ header .fa {
 }
 
 #about-us .image {
-    float: left;
+    float: center;
     width: 478px;
     height: 394px;
     shape-margin: 20px;
@@ -857,18 +857,18 @@ header .fa {
 #about-us p {
     margin: 0;
     color: rgb(128, 125, 125);
-    font-size: 25px;
+    font-size: 20px;
     line-height: 25px;
     letter-spacing: 0.5px;
-    text-align: left;
+    text-align: center;
     font-weight: 400;
     margin-bottom: 200px;
 }
 
 #about-us .image {
-    float: left;
-    width: 350px;
-    height: 480px;
+    float: center;
+    width: 394px;
+    height: 478px;
     shape-margin: 20px;
     margin-right: 50px;
     margin-bottom: 40px;
@@ -877,7 +877,7 @@ header .fa {
 #about-us .thumbnail {
     padding: 10px;
     border: none;
-    border-radius: 230px;
+    border-radius: 190px;
     object-fit: cover;
 }
 

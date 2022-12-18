@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>Blog Post</title>
+    <style>
+    .jumbotron {width: 100%;height: 250px;}
+        .jumbotron h2 {padding-bottom: 0;}
+    </style>
+</head>
+
+<body>
+    <header class="header bg">
+        <div class="container text-white">
+            <div class="row">
+                <div class="col-sm-4 align-self-center text-left">
+                    <h6></h6>
+                </div>
+                <div class="col-sm-4 col-12 align-self-center box-1 text-center">
+                    <a class="navbar-brand" href="index.html"><img src="images/aitesam_logo2.png" alt="logo" width="auto" height="70" ></a>
+                </div>
+            </div>
+            <!--/row-->
+        </div>
+        <!--container-->
+    </header>
+    <span class="position-absolute trigger"><!-- hidden trigger to apply 'stuck' styles --></span>
+    <nav class="navbar navbar-expand-sm sticky-top navbar-dark">
+        <div class="container">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar1">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar1">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link active" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Me</a>
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!--container end-->
+    </nav>
+    <!-- blog-single Section Start -->
+    <div id="blog-single">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-12 heading-1">
+                    <br>
+                    <h3>Read Blog</h3>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+            <div class="row" data-aos="fade-up" data-aos-duration="700">
+                <div class="col-sm-12">
+                    <div class="heading">
+                        <h2>How to waste your weekend while not wasting it...</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="social-buttons" data-aos="fade-up" data-aos-duration="700">
+                
+            </div>
+            <div class="row" data-aos="fade-up" data-aos-duration="700">
+                <div class="col-sm-12 col-lg-12 box">
+                    <p>&emsp;&emsp;I tried to be productive this weekend but here's how luck had me. In this post, I am to explain you how a simple issues turned into a nightmare.
+                        <br>
+                        &emsp;&emsp;<h4>SATURDAY:</h3><br>
+                        <b>Objective:</b> Interface ESP32 based hardware to Cloud Database and establish Communication
+                        <br><br>
+                        <b>ME: </b> Building the Code, Eliminating Errors, Compiling, Testing ....DONE
+                        <br>
+                        &emsp;&emsp;Let's Upload it to ESP32. Should be very Simple.
+                        <br><br>
+                        <b>LUCK: </b>
+                        Uploading Fails. ESP32 Not Entering Boot Mode
+                        <br>
+                        &emsp;&emsp;Checking the schematic, Found it Doesn't have RC Filter Capacitor on Reset Pin. 
+                        <br><br>
+                        <b>ME: </b>
+                        Easy Fix, I will do it myself.<br>&emsp;&emsp; Okay Soldered the Cap, Things worked, Upload DONE
+                    </p>
+                    <h5>The Real Nightmare Begins...</h5><br>
+                    <p>
+                        <b>LUCK: </b>
+                        MCU Freezes, The sketch doesn't run.
+                        <br>
+                        &emsp;&emsp;ESP32 connects and disconnects back again in a loop. I am unable to upload again.
+                        <br> &emsp;&emsp; ERROR: Serial port Busy...
+                        <br><br>
+                        <b>ME: </b> Searching Internet: Okay, The USB Hub cannot provide current needed for ESP32 WiFi.begin()
+                        <br>
+                        &emsp;&emsp;See how much current Can it deliver. Dell doesnt say a word about that  :(<br>
+                        Tried several Power Supplies. No Luck. <br>Measure the Current, Oh its 34mA. Yes for Sure Hub can provide that.
+                        <br><br>
+                        <b>ME: </b>
+                        Let's try a simpler program. Blink should work but Serial doesn't connect. How Can I upload?
+                        <br>
+                        &emsp;&emsp;After several hours, Force boot ESP32 in Reset Mode. Yes it connects. Blink upload successful and working.
+                        <br><br>
+                        <b>ME: </b>
+                        Let's try WiFi.begin() now. Again Freezes.<br>&emsp;&emsp; Let's try my other ESP32 Board. Another Freeze. Doesnt even connect back no matter what I did.
+                    </p>
+                    <h5>Clueless Problems </h5>
+                    <p><br>
+                        <b>ME: </b>
+                        Reinstall Drivers. Restart PC. Clear USB Event log.
+                        <br>
+                        &emsp;&emsp;Oh the USB device is blocked
+                        <br> &emsp;&emsp; Error: Device Descriptor Request Failed...
+                        <br><br>
+                        <b>ME: </b> Okay, CP2102 is the USB-Serial Tranceiver. Read CP2102 Datasheet, Force Hardware Reset, No Luck
+                        No matter what I do: CP2102 on one ESP32 board is now bricked. :(
+                        <br><br>
+                        <b>ME: </b>
+                        It might be my PC. 
+                        Internet Says: Clear    Device ID from HKEY_LOCAL Machines, Disable USB Active Suspend from Advanced Power Settings.
+                        <br>
+                        <br>
+                        <b>LUCK: </b>
+                        No Worries. I'm here for You.... :(
+                        
+                        <!--
+                        <li>Would I really be able to finish it?</li><br>
+                        <li>Wouldn't I waste a lot of my time with no outcome?</li><br>
+                        <li>Would it be helpful enough?</li><br>
+                        <li>Shouldn't I pay someone to build me one? </li><br>
+                        <li>How does a noobs website look like?</li><br>
+                        <li>How responsive would it be?</li><br>
+                        -->
+                    </p>
+                    &emsp;&emsp;<h4>SUNDAY:</h3><br>
+                    <h5>
+                        Another Wrong Turn.....
+                    </h5>
+                    <br>
+                    
+                    <p>
+                        <b>ME: </b>
+                        Maybe its my PC. Let's try another Computer.<br>
+                        &emsp;&emsp;Okay, I Have Raspberry Pi but my Monitor is Busy with PC. SSH should work
+                        <br>
+                        <br>
+                        <b>LUCK: </b>
+                         You Don't Even Know the IP. Network Admin Won't let you know Either...
+                        <br><br>
+                        <b>ME: </b>Let's Try nmap scan to get Raspberry Pi IP
+                        Need to install nmap, Download Mirror speed is Terrible 6kb/s, Download Failed. <br>Try Again
+                        <br>&emsp;&emsp; Okay, Installed. Let's Try nmap scan.
+                        <br><br>
+                        <b>LUCK: </b>
+                        Unsuccessful Run, Turns out my VPN is blocking, Turn Off VPN, Still no Luck. Oh! The network restricts nmap unless admin.
+                        <br>
+                        <b>ME: </b>
+                        No way to ssh, Let's Disconnect all my monitor setup and Connect PI to HDMI display. Oops, the installed OS is CLI only.
+                        <br><br>
+                        <b>LUCK: </b>
+                        It has to do System Updates before you could do anything..<br> Okay, Updates Done.
+                        After lsusb, its confirmed your ESP32 Board have a bricked CP2102 bridge.<br>
+                    </p>
+                    
+                    
+                    <h5>
+                        It doesn't END here.
+                    </h5>
+                    <p><br><b>ME: </b><br>
+                        Reading CP2102 Datasheet, Let's Try Hardware Reset for CP2102, try Changing Strapping pins.... Still No Luck.
+                        <br>
+                        <br>
+                        <b>LUCK: </b>
+                         Oh, You messed the Solder on QFN Pads while placing Multimeter probs.<br>
+                         &emsp;&emsp;Now there is a short between VBUS and RESET Pin. 
+                        <br><br>
+                        <b>ME: </b>Taking it to Phone repair shop, Getting fresh reflow to fix the short.
+                        <br><br>
+                        <b>LUCK: </b>
+                        <br>&emsp;&emsp; Still The same issue. Connect / Disconnect Loop iterated with while(1) .... :)
+                        <br><br>
+                        <b>ME: </b>
+                        Let's bypass CP2102 and perform SPI Flash.
+                        <br>&emsp;&emsp; Oh, I think ESP32 is resetting in loop and not the CP2102. But why serial doesn't connect?
+                        <br><br>
+                        <b>LUCK: </b>
+                        SPI Flash Process FAILED. Not Entering boot Mode.<br>
+                    </p>
+                    <h5>
+                        What's the Problem?
+                    </h5>
+                    <p><br><b>ME: </b>
+                        Okay, My One ESP32 Devkit is Dead Now. The Other one doesn't flash without until Forced Reset.
+                        <br>&emsp;&emsp;I will try restoring with AT Factory Firmware someday.<br>
+                        <br>
+                        <b>ME: </b>
+                         Okay, Luck! Listen, You wasted my whole weekend. I'm still where I was two days ago. <br>
+                         &emsp;&emsp;Now Please tell me what's wrong.
+                        <br><br>
+                        <b>LUCK: </b>Connect ESP32 to a DC power adapter. Observe the status LEDs
+                        <br><br>
+                        <b>ME: </b>
+                        <br>Ohhh, It works. No Longer Reset Loops. But Why it doesn't work with PC? 
+                        <br>&emsp;&emsp;Is it lack of current? But PC doesn'r Give any warnings about current surge either.
+                        <br>
+                    </p>
+                    <h5>
+                        Finally Fixed....
+                    </h5>
+                    <p><br>Turns out, It was a bad USB cable.
+                        Bought a new cable and everything worked like a charm.
+                        <li>ESP32 Has current surge upto 700mA at WiFi.begin()</li><br>
+                        <li>USB Cable had poor Copper Wires for Power</li><br>
+                        <li>Not Enough current -> Drop in Voltage -> ESP32 Reset -> Again & Again</li><br>
+                        <br>
+                    </p>
+
+                    <h5>
+                        ...............
+                    </h5>
+                    <p><br>&emsp;&emsp;I always curse myself for solving simple problems, the Harder Way<br>
+                        But this is the problem, that You don't even know what is the problem :) <br>
+                        Let's Hope The next week would be better...
+                    </p>
+
+
+
+
+                </div>
+            </div>
+            <!--
+            <section class="section4 more-blog" data-aos="fade-up" data-aos-duration="700">
+                <h2 class="background"><span>Similar Posts</span></h2>
+                <div class="container">
+                    <div class="row" data-aos="fade-up" data-aos-duration="700">
+                        <div class="card-deck">
+                            <div class="card">
+                                <img class="card-img-top" src="images/portfolio-2.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <a class="btn btn-primary" href="blog.html" role="button">Photography</a>
+                                    <p class="card-text"><small class="text-muted">January 24th 2017</small></p>
+                                    <p class="card-text"><a href="blog_single.html">Beautiful girl dancing wearing beach wear for photoshoot!</a></p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="images/portfolio-3.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <a class="btn btn-primary" href="blog.html" role="button">Photography</a>
+                                    <p class="card-text"><small class="text-muted">January 24th 2017</small></p>
+                                    <p class="card-text"><a href="blog_single.html">Beautiful girl dancing wearing beach wear for photoshoot!</a></p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="images/portfolio-5.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <a class="btn btn-primary" href="blog.html" role="button">Photography</a>
+                                    <p class="card-text"><small class="text-muted">January 24th 2017</small></p>
+                                    <p class="card-text"><a href="blog_single.html">Beautiful girl dancing wearing beach wear for photoshoot!</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    -->
+    <!-- Blog_single Section End -->
+
+    <section class="section-7">
+        <!-- Footer -->
+        <footer class="page-footer font-small stylish-color-dark">
+
+            <!-- Footer Links -->
+            <div class="container text-center text-md-left">
+
+                <!-- Grid row -->
+                <div class="row">
+
+                    <!-- Grid column -->
+                    <div class="col-lg-5 col-sm-12 mx-auto box-1">
+
+                        <!-- Content -->
+                        <a href="index.html"><img src="images/footer-logo.png" alt="footer-logo"></a>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five</p>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <hr class="clearfix w-100 d-md-none">
+
+                    <!-- Grid column -->
+                    <div class="col-lg-2 col-sm-4 box-2 mx-auto">
+
+                        <!-- Links -->
+                        <h5>Site Navigation</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="index.html">go to home</a>
+                            </li>
+                            <li>
+                                <a href="services.html">services</a>
+                            </li>
+                            <li>
+                                <a href="portfolio.html">portfolio</a>
+                            </li>
+                            <li>
+                                <a href="blog.html">read blog</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">contact us</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">product support</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <hr class="clearfix w-100 d-md-none">
+
+                    <!-- Grid column -->
+                    <div class="col-lg-2 col-sm-4 box-3 mx-auto">
+
+                        <!-- Links -->
+                        <h5>information</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#!">user login</a>
+                            </li>
+                            <li>
+                                <a href="#!">creat new account</a>
+                            </li>
+                            <li>
+                                <a href="#!">checkout</a>
+                            </li>
+                            <li>
+                                <a href="#!">my cart</a>
+                            </li>
+                            <li>
+                                <a href="#!">other information</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <hr class="clearfix w-100 d-md-none">
+
+                    <!-- Grid column -->
+                    <div class="col-lg-2 col-sm-4 box-4 mx-auto">
+
+                        <!-- Links -->
+                        <h5>policies & Info</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#!">Terms Conditions </a>
+                            </li>
+                            <li>
+                                <a href="#!">website polocy</a>
+                            </li>
+                            <li>
+                                <a href="#!">Policy for Sellers </a>
+                            </li>
+                            <li>
+                                <a href="#!">Policy for Buyers</a>
+                            </li>
+                            <li>
+                                <a href="#!">Shipping & Refund </a>
+                            </li>
+                            <li>
+                                <a href="#!">Wholesale Policy</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Grid row -->
+
+            </div>
+            <!-- Footer Links -->
+
+            <!-- Copyright -->
+             <div class="footer-copyright text-center">
+                <div class="gradient"></div>
+                <p>© 2022, All Rights reserved. Designed by<a href="about.html"><br> Muhammad Aitesam</a></p>
+            </div>
+            <!-- Copyright -->
+
+        </footer>
+        <!-- Footer -->
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/animate.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>

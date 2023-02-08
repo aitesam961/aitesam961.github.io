@@ -84,7 +84,7 @@
             <div class="row" data-aos="fade-up" data-aos-duration="700">
                 <div class="col-sm-12">
                     <div class="heading">
-                        <h2>How to waste your weekend while not wasting it...</h2>
+                        <h2>Power Saving techniques in Ultra-Low Power Embedded Systems: A Practical Design Guide</h2>
                     </div>
                 </div>
             </div>
@@ -93,162 +93,147 @@
             </div>
             <div class="row" data-aos="fade-up" data-aos-duration="700">
                 <div class="col-sm-12 col-lg-12 box">
-                    <p>&emsp;&emsp;I tried to be productive this weekend but here's how luck had me. In this post, I am to explain you how a simple issues turned into a nightmare.
+                    <p>&emsp;&emsp;Low Power Devices are becoming an increasingly  important area of embedded electronics design. From wearables devices to handheld equipment to remote applications, a large number of devices have batteries as the primary source of power supply. So comes the consideration of designing smart and power efficient devices.
+                        It requires a very unique design approach that balances the functionality, performance and energy consumption.
                         <br>
-                        &emsp;&emsp;<h4>SATURDAY:</h3><br>
-                        <b>Objective:</b> Interface ESP32 based hardware to Cloud Database and establish Communication
-                        <br><br>
-                        <b>ME: </b> Building the Code, Eliminating Errors, Compiling, Testing ....DONE
+                            Below are some practical techniques that help optimize embedded systems for maximum possible energy efficiency.
                         <br>
-                        &emsp;&emsp;Let's Upload it to ESP32. Should be very Simple.
-                        <br><br>
-                        <b>LUCK: </b>
-                        Uploading Fails. ESP32 Not Entering Boot Mode
-                        <br>
-                        &emsp;&emsp;Checking the schematic, Found it Doesn't have RC Filter Capacitor on Reset Pin. 
-                        <br><br>
-                        <b>ME: </b>
-                        Easy Fix, I will do it myself.<br>&emsp;&emsp; Okay Soldered the Cap, Things worked, Upload DONE
-                    </p>
-                    <h5>The Real Nightmare Begins...</h5><br>
-                    <p>
-                        <b>LUCK: </b>
-                        MCU Freezes, The sketch doesn't run.
-                        <br>
-                        &emsp;&emsp;ESP32 connects and disconnects back again in a loop. I am unable to upload again.
-                        <br> &emsp;&emsp; ERROR: Serial port Busy...
-                        <br><br>
-                        <b>ME: </b> Searching Internet: Okay, The USB Hub cannot provide current needed for ESP32 WiFi.begin()
-                        <br>
-                        &emsp;&emsp;See how much current Can it deliver. Dell doesnt say a word about that  :(<br>
-                        Tried several Power Supplies. No Luck. <br>Measure the Current, Oh its 34mA. Yes for Sure Hub can provide that.
-                        <br><br>
-                        <b>ME: </b>
-                        Let's try a simpler program. Blink should work but Serial doesn't connect. How Can I upload?
-                        <br>
-                        &emsp;&emsp;After several hours, Force boot ESP32 in Reset Mode. Yes it connects. Blink upload successful and working.
-                        <br><br>
-                        <b>ME: </b>
-                        Let's try WiFi.begin() now. Again Freezes.<br>&emsp;&emsp; Let's try my other ESP32 Board. Another Freeze. Doesnt even connect back no matter what I did.
-                    </p>
-                    <h5>Clueless Problems </h5>
-                    <p><br>
-                        <b>ME: </b>
-                        Reinstall Drivers. Restart PC. Clear USB Event log.
-                        <br>
-                        &emsp;&emsp;Oh the USB device is blocked
-                        <br> &emsp;&emsp; Error: Device Descriptor Request Failed...
-                        <br><br>
-                        <b>ME: </b> Okay, CP2102 is the USB-Serial Tranceiver. Read CP2102 Datasheet, Force Hardware Reset, No Luck
-                        No matter what I do: CP2102 on one ESP32 board is now bricked. :(
-                        <br><br>
-                        <b>ME: </b>
-                        It might be my PC. 
-                        Internet Says: Clear    Device ID from HKEY_LOCAL Machines, Disable USB Active Suspend from Advanced Power Settings.
-                        <br>
-                        <br>
-                        <b>LUCK: </b>
-                        No Worries. I'm here for You.... :(
+                        &emsp;&emsp;<h4>Power Management</h3><br>
                         
-                        <!--
-                        <li>Would I really be able to finish it?</li><br>
-                        <li>Wouldn't I waste a lot of my time with no outcome?</li><br>
-                        <li>Would it be helpful enough?</li><br>
-                        <li>Shouldn't I pay someone to build me one? </li><br>
-                        <li>How does a noobs website look like?</li><br>
-                        <li>How responsive would it be?</li><br>
-                        -->
-                    </p>
-                    &emsp;&emsp;<h4>SUNDAY:</h3><br>
-                    <h5>
-                        Another Wrong Turn.....
-                    </h5>
-                    <br>
                     
-                    <p>
-                        <b>ME: </b>
-                        Maybe its my PC. Let's try another Computer.<br>
-                        &emsp;&emsp;Okay, I Have Raspberry Pi but my Monitor is Busy with PC. SSH should work
-                        <br>
-                        <br>
-                        <b>LUCK: </b>
-                         You Don't Even Know the IP. Network Admin Won't let you know Either...
-                        <br><br>
-                        <b>ME: </b>Let's Try nmap scan to get Raspberry Pi IP
-                        Need to install nmap, Download Mirror speed is Terrible 6kb/s, Download Failed. <br>Try Again
-                        <br>&emsp;&emsp; Okay, Installed. Let's Try nmap scan.
-                        <br><br>
-                        <b>LUCK: </b>
-                        Unsuccessful Run, Turns out my VPN is blocking, Turn Off VPN, Still no Luck. Oh! The network restricts nmap unless admin.
-                        <br>
-                        <b>ME: </b>
-                        No way to ssh, Let's Disconnect all my monitor setup and Connect PI to HDMI display. Oops, the installed OS is CLI only.
-                        <br><br>
-                        <b>LUCK: </b>
-                        It has to do System Updates before you could do anything..<br> Okay, Updates Done.
-                        After lsusb, its confirmed your ESP32 Board have a bricked CP2102 bridge.<br>
+                    <p><br>&emsp;&emsp;Power management is the most important aspect in designing Ultra Low Power (ULP) systems.
+                        It must be taken into account the amount of effective energy vs the energy lost in by-operations. Both hardware and software should be optimized for this. Batteries should be selected wisely considering the amount of current consumption per hour compared to the acceptable amount of hours per battery.<br>
                     </p>
-                    
-                    
-                    <h5>
-                        It doesn't END here.
-                    </h5>
-                    <p><br><b>ME: </b><br>
-                        Reading CP2102 Datasheet, Let's Try Hardware Reset for CP2102, try Changing Strapping pins.... Still No Luck.
-                        <br>
-                        <br>
-                        <b>LUCK: </b>
-                         Oh, You messed the Solder on QFN Pads while placing Multimeter probs.<br>
-                         &emsp;&emsp;Now there is a short between VBUS and RESET Pin. 
-                        <br><br>
-                        <b>ME: </b>Taking it to Phone repair shop, Getting fresh reflow to fix the short.
-                        <br><br>
-                        <b>LUCK: </b>
-                        <br>&emsp;&emsp; Still The same issue. Connect / Disconnect Loop iterated with while(1) .... :)
-                        <br><br>
-                        <b>ME: </b>
-                        Let's bypass CP2102 and perform SPI Flash.
-                        <br>&emsp;&emsp; Oh, I think ESP32 is resetting in loop and not the CP2102. But why serial doesn't connect?
-                        <br><br>
-                        <b>LUCK: </b>
-                        SPI Flash Process FAILED. Not Entering boot Mode.<br>
-                    </p>
-                    <h5>
-                        What's the Problem?
-                    </h5>
-                    <p><br><b>ME: </b>
-                        Okay, My One ESP32 Devkit is Dead Now. The Other one doesn't flash without until Forced Reset.
-                        <br>&emsp;&emsp;I will try restoring with AT Factory Firmware someday.<br>
-                        <br>
-                        <b>ME: </b>
-                         Okay, Luck! Listen, You wasted my whole weekend. I'm still where I was two days ago. <br>
-                         &emsp;&emsp;Now Please tell me what's wrong.
-                        <br><br>
-                        <b>LUCK: </b>Connect ESP32 to a DC power adapter. Observe the status LEDs
-                        <br><br>
-                        <b>ME: </b>
-                        <br>Ohhh, It works. No Longer Reset Loops. But Why it doesn't work with PC? 
-                        <br>&emsp;&emsp;Is it lack of current? But PC doesn'r Give any warnings about current surge either.
-                        <br>
-                    </p>
-                    <h5>
-                        Finally Fixed....
-                    </h5>
-                    <p><br>Turns out, It was a bad USB cable.
-                        Bought a new cable and everything worked like a charm.
-                        <li>ESP32 Has current surge upto 700mA at WiFi.begin()</li><br>
-                        <li>USB Cable had poor Copper Wires for Power</li><br>
-                        <li>Not Enough current -> Drop in Voltage -> ESP32 Reset -> Again & Again</li><br>
-                        <br>
+
+                    <h4>
+                       Hardware Optimzation
+                    </h4>
+                    <p><br>&emsp;&emsp;Hardware Optimization is a crucial stage in optimizing system power consumption. There are several ways to accomplish this and it varies with the type of hardware and application. Some common hardware optimization technique are given below:
                     </p>
 
                     <h5>
-                        ...............
+                        ULP MCUs:
                     </h5>
-                    <p><br>&emsp;&emsp;I always curse myself for solving simple problems, the Harder Way<br>
-                        But this is the problem, that You don't even know what is the problem :) <br>
-                        Let's Hope The next week would be better...
+                     <p>
+                        &emsp;&emsp;Nowadays, a lot of embedded electronics use Microcontrollers (or MCUs). Their power consumption depends on several factors including their Processing Power and Clock frequencies.
+	                    Many of them feature Sleep modes in lighter loads which disables some power hungry stages of the MCU. Wake-up is usually supported by interrupt pins which makes it very convenient to pair with sensing applications where sensors act as an Interrupt Source.
+                        <br>Some common examples of such MCUs are:
+
+                        <br>
+                            <li>ESP32 with WiFi, BLE supporting Sleep and Deep Sleep.</li>
+                            <li>nRF52 family of MCUs with BLE, rich peripherals and Ultra-Low Power consumption profile.</li>
+                            <li>STM32 series with Excessive computer power, rich peripherals, high-end security and extremely efficient operation. <br>&emsp;&emsp;(Family: STM32 U and L series).</li>
+                            <li>Texas Instruments CC26xx family with Incredible reliability rating and power efficient design.</li>
+
+                     </p>
+
+                    <h5>
+                        Pull-Up Resistors
+                    </h5>
+                     <p>
+                        &emsp;&emsp;Digital Electronics often require Pull-Up Resistors for adjusting logic Levels. Typical applications include Pull-Up resistors for I2C Bus or setting the configuration of Semiconductor devices to select the modes of operation.
+                        Pull-Up resistors can contribute to a significant draw of current which is usually consistent and unavoidable. The best way to reduce power consumption across Pull-Up Resistors is to use higher values of resistors.
+                        <br>
+                        <b>For Example:</b> a 10k Pull-Up Resistor with 5V has a current draw of approx. 0.5mA. Replacing it with a 220k Resistor will maintain the same voltage with current draw of 0.02mA which is 25x less.
+                        
+                        <br>
+                        <b>NOTE:</b> Bigger resistance makes for a weaker pull-up effect. The bus speed must be taken into consideration when deciding for the resistance. For Example, a 10k Pull-Up on a DDR3 Bus operating at 1600MHz will induce a significant amount of delay and the Memory Bus is likely to misbehave. It requires a balance between performance and power consumption.
+                    
                     </p>
+                    <h5>
+                        Voltage Dividers
+                    </h5>
+                     <p>
+                        &emsp;&emsp;In analog circuits, voltage dividers are often used to set the operation modes of OP-AMPs or maybe setting the reference voltage for a circuit.
+                        Voltage dividers do come with a significant amount of current loss which can be calculated for both resistors using Ohm's law and adding it up.
+                        The catch here though is to use a higher multiple of resistance.
+                        <br>
+                        <b>For Example:</b> Using 2x 1k resistors in series as a voltage divider with source of 5V results in 2.5V output.
+                        The current loss here is 5mA.
+                        Replacing the circuit with 2x 200k resistors results in 0.06mA.
+                        This technique is very helpful in optimizing the voltage dividers that are being used to obtain reference voltages.
+                        
+                    </p>
+
+                    <h5>
+                        Switching Regulators and LDOs
+                    </h5>
+                     <p>
+                        &emsp;&emsp;Linear Dropout Regulators or LDOs are very commonly used to obtain regulated voltages. Often stepping down the voltage to a desirable level. As the difference between Vin and Vout Grows bigger, the power losses across them linearly increase.
+                        <br>&emsp;&emsp;The best alternative to using LDOs is Switching Regulators. Their principle of operation is to adjust the Output Duty cycle to obtain the desired or preset output. They have no significant losses across them except a very small amount of current being used by the switching controller and some negligible leakages. 
+                        <br><br>&emsp;&emsp;Such devices could be more expensive compared to LDOs. They require more components around them to work and take a larger area but nowadays, industry has developed better switching regulators tailored to specific applications significantly optimizing the area and need for less components.
+                        The alternative to both techniques could be sometimes as simple as using a series of diodes to obtain the desired voltage but that bears some drawbacks like the noise and fluctuation in input is directly transparent to the output and also output voltage is not fixed and varies directly with the change in input. Though in some specific applications, this technique is very useful.
+                        
+                    </p>
+
+                    <h5>
+                        Selection of Batteries: Rechargeable vs Non-Rechargeable 
+                    </h5>
+                     <p>
+                        &emsp;&emsp;The selection of batteries is sometimes very confusing and it requires a balance between battery life, size and cost. The rechargeable batteries are an attractive option for applications like handheld devices but they bear a significant amount of self discharge which makes them unsuitable for long term operations. They are commonly used in applications where recharging after a certain period of time is possible.
+                        <br>&emsp;&emsp;If an application is intended to work for several months or years, rechargeable batteries are not a sensible choice. The non-rechargeable batteries have a lesser amount of self-discharge so they are generally more appealing for very long term operation.
+                        <br><br>&emsp;&emsp;The critical point to consider here is that all the batteries have a certain amount of current discharge limits. It must be taken into consideration that the peak current draw is within the range of continuous discharge specifications of the battery.
+          
+                    </p>
+
+
+                    <h4>
+                        Software Optimzation
+                     </h4>
+                     <p><br>&emsp;&emsp;Understanding the application requirements and utilizing the system resources, embedded systems have a lot of potential of optimization in software. The deeper we have the system understanding, the better it could be optimized. To reduce power losses, it’s better to reduce the number of Hardware Abstraction Layers (HAL) as much as possible. Abstraction layers are typically created to make the software development easier but they’re more generic instead of purpose built so carry a lot of extra payload that isn’t necessary anyway.
+                    </p>
+
+
+
+
+
+                    <h5>
+                        Sleep Modes
+                    </h5>
+                     <p>
+                        &emsp;&emsp; Sleep modes for microprocessors and Microcontrollers are  a key to power optimization. They should be utilized whenever possible with a wakeup plan on load. Aside from that, microprocessors sometimes provide the flexibility to reduce clock speeds  when loads are minimal. If more than one cores are available, it’s helpful to disable the performance cores under light loads while efficiency cores keep running to handle lighter threads.
+                        <br><br><b>For Example:</b> ESP32 has two performance cores and an Ultra Low Power Processor. If the Application is running on One core, the second should be disabled. Even further, if application takes a long time to monitor certain logic levels, it’s better to keep both cores OFF and run the GPIO monitoring processes on the ULP Processor only.
+                    
+                    </p>
+
+                    <h5>
+                        Data Structures 
+                    </h5>
+                     <p>
+                        &emsp;&emsp; Data Structures are highly responsible for larger power consumption during the execution time. If data structure requires a lot of traversing, it consumes unnecessary clock cycles and hence more time resulting in more power loss. More efficient data structures should be utilized considering the type of application for an optimized power efficiency.
+                        <br><br><b>For Example:</b> In situation where a lot of tighter loops are required, a sequentially traversed data structure may prove more efficient compared to random access data structures based on the computation required behind the scenes to compute their physical addresses.
+                   
+                    </p>
+
+                    <h5>
+                        Sampling Techniques
+                    </h5>
+                     <p>
+                        &emsp;&emsp; In the case of sensing environments, it might not be necessary to keep monitoring data all the time. In such scenarios, it’s better to monitor sensors after certain intervals of time while keeping the system in sleep (or at least semi-sleep) rest of the time.
+
+                        <br><br><b>For Example:</b> In environmental temperature monitoring, it is not necessary to keep reading data from sensors several times per second. If sampling time is set to, let’s say 1 sample per minute while keeping the sensor off the rest of the time, that can save a reasonable amount of power.
+                    </p>
+
+
+                    <h4>
+                        Energy Harvesting 
+                     </h4>
+                     <p><br>&emsp;&emsp;Energy harvesting techniques are very helpful to improve the Up-Time of the system. Energy harvesting sources such as Solar, Kinetic or Thermal could be used as a secondary source of supply as well as to recharge the batteries for later time.
+
+                        <br><br><b>For Example:</b> The Soil Monitoring nodes often deployed in large crop field can be equipped with Solar Cells to run on the Solar Energy and save batteries during the day or even better to recharge the batteries for a longer runtime.
+                        
+                    </p>
+
+                    <p>
+                        <br>&emsp;&emsp;Most of these techniques are personally practiced by me during my hardware design journey and it helped me achieve more than desired results. I highly recommend them but it’s important to consider that there are often trade-offs between cost, performance, power efficiency, size etc. Every Embedded Engineer should properly understand the system requirements to implement any of these practices.
+
+                    </p>
+
+
+
+
+
+
 
 
 
@@ -422,7 +407,7 @@
             <!-- Copyright -->
             <div class="footer-copyright text-center">
                 <div class="gradient"></div>
-                <p>© 2022, All Rights reserved. Designed by<a href="about.html"><br> Muhammad Aitesam</a></p>
+                <p>© 2023, All Rights reserved. Designed by<a href="about.html"><br> Muhammad Aitesam</a></p>
             </div>
             <!-- Copyright -->
         </footer>

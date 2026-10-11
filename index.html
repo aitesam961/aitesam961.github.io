@@ -1,375 +1,159 @@
 <!doctype html>
 <html lang="en">
-
 <head>
-    
-    <!-- Required meta tags-->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/main.css">
-
-    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Muhammad Aitesam — electrical engineer working on embedded hardware, firmware, and digital systems. Projects, PCB design videos, and engineering services.">
+    <title>Muhammad Aitesam — Electrical Engineer</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <header class="header bg">
-        <div class="container text-white">
-            <div class="row">
-                <div class="col-sm-4 align-self-center text-left">
-                    <h6><!--ESTD 1969 --></h6>
-                </div>
-                <div class="col-sm-12 col-6 align-self-center box-1 text-center">
-                    <a class="navbar-brand" href="index.html"><img src="images/aitesam_logo2.png" alt="logo" width="auto" height="70" ></a>
-                </div>
-            </div>
-            <!--/row-->
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="intro">
+        <img class="portrait" src="assets/portrait.jpg" alt="Muhammad Aitesam" width="96" height="96">
+        <div>
+            <h1>Muhammad Aitesam</h1>
+            <p class="role">Electrical engineer · Hardware hacker</p>
+            <p>I build embedded hardware, write firmware, and explore digital systems.</p>
+            <nav class="links" aria-label="Page sections">
+                <a href="#about">About</a>
+                <a href="#videos">YouTube</a>
+                <a href="#projects">Projects</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </nav>
         </div>
-        <!--container-->
     </header>
 
-    <span class="position-absolute trigger"><!-- hidden trigger to apply 'stuck' styles --></span>
-    <nav class="navbar navbar-expand-sm sticky-top navbar-dark">
-        <div class="container">
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar1">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <main id="main">
+        <section id="about" class="about" aria-labelledby="about-heading">
+            <h2 id="about-heading">About me</h2>
+            <p>I’m Aitesam, an electrical engineer specializing in embedded systems, hardware design, and product prototyping. I develop electronics and firmware for IoT and industrial applications, with experience taking commercial products from design and prototyping through manufacturing and component sourcing.</p>
+            <p>I’m also interested in computer architecture, RISC-V systems-on-chip, and RTL design for FPGAs and ASICs. I enjoy learning new design techniques and exploring how hardware and software work together.</p>
+            <p>I founded <a href="https://github.com/theheliumlabs">Helium Labs</a>, a small engineering consultancy and solutions team. I share projects on <a href="https://github.com/aitesam961">GitHub</a> and occasionally document my PCB design process on <a href="https://www.youtube.com/@aitesam961">YouTube</a>.</p>
+        </section>
 
-        <!-- Menu Below-->
-            <div class="collapse navbar-collapse" id="navbar1">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link active" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="projects.html">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="services.html">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="blog.html">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About Me</a>
-                    </li>
-                </ul>
+        <section id="videos" aria-labelledby="videos-heading">
+            <div class="section-heading">
+                <h2 id="videos-heading">On YouTube</h2>
+                <a href="https://www.youtube.com/@aitesam961">Visit channel <span aria-hidden="true">↗</span></a>
             </div>
-        </div>
-        <!--container end here-->
-    </nav>
-    <!--Section-1-->
-    <section class="section-1">
-        <div class="jumbotron d-flex align-items-center">
-            <div class="gradient"></div>
-            <div class="container-fluid content">
-                <h1 data-aos="fade-up" data-aos-delay="100">WELCOME</h1>
-                <h2 data-aos="fade-up" data-aos-delay="300">MUHAMMAD AITESAM </h2>
-                <!--<p data-aos="fade-up" data-aos-delay="400">Engineer&emsp;|&emsp;Programmer&emsp;|&emsp;Hardware Hacker</p>-->
-                <p data-aos="fade-up" data-aos-delay="400" style="color:rgb(255, 255, 255);font-size:17px;">Engineer | Programmer | Hardware Hacker</p>
-                <p data-aos="fade-up" data-aos-delay="600"><a href="about.html" class="btn btn-success">About Me</a></p>
+            <ul class="videos">
+                <li>
+                    <a class="video-thumbnail" href="https://www.youtube.com/watch?v=JsCCEnHJgYc" tabindex="-1" aria-hidden="true">
+                        <img src="assets/video-led.jpg" alt="" width="320" height="180" loading="lazy" decoding="async">
+                        <span class="play-icon" aria-hidden="true">▶</span>
+                    </a>
+                    <div>
+                        <h3><a href="https://www.youtube.com/watch?v=JsCCEnHJgYc">Routing a four-layer LED matrix badge <span aria-hidden="true">↗</span></a></h3>
+                        <p>A PCB routing timelapse in KiCad.</p>
+                    </div>
+                </li>
+                <li>
+                    <a class="video-thumbnail" href="https://www.youtube.com/watch?v=ky78GPNEK78" tabindex="-1" aria-hidden="true">
+                        <img src="assets/video-audio.jpg" alt="" width="320" height="180" loading="lazy" decoding="async">
+                        <span class="play-icon" aria-hidden="true">▶</span>
+                    </a>
+                    <div>
+                        <h3><a href="https://www.youtube.com/watch?v=ky78GPNEK78">Routing an audio processing board <span aria-hidden="true">↗</span></a></h3>
+                        <p>A PCB routing timelapse in EasyEDA Pro.</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section id="projects" aria-labelledby="projects-heading">
+            <div class="section-heading">
+                <h2 id="projects-heading">GitHub projects</h2>
+                <a href="https://github.com/aitesam961?tab=repositories">All projects <span aria-hidden="true">↗</span></a>
             </div>
-            <!--container-fluid end-->
-        </div>
-    </section>
-    
-    <section class="section-3">
-        <div class="container">
-            <div class="row m-0">
-                <div class="col-lg-5 col-md-12 p-0" data-aos="fade-right" data-aos-delay="500">
-                    <h3>Experience & <br>Research Interests</h3>
-                    <ul>
-                        <li><a href="services.html"><i class="fa fa-check" aria-hidden="true"></i>Embedded Hardware Design</a> </li>
-                        <li><a href="services.html"><i class="fa fa-check" aria-hidden="true"></i>Firmware Development</a></li>
-                        <li><a href="services.html"><i class="fa fa-check" aria-hidden="true"></i>Internet of Things</a></li>
-                        <li><a href="services.html"><i class="fa fa-check" aria-hidden="true"></i>Digital Desgn & FPGAs</a></li>
-                        <li><a href="services.html"><i class="fa fa-check" aria-hidden="true"></i>RISCV and CPU SoCs</a></li>
-                        <li><a href="services.html"><i class="fa fa-check" aria-hidden="true"></i>Computer Architecture</a></li>
-                        <li><a href="services.html"><i class="fa fa-check" aria-hidden="true"></i>Networking & Clustering</a></li>
-                    </ul>
+            <ul class="projects">
+                <li>
+                    <img class="project-image" src="assets/rocket.webp" alt="Rocket flight computer board render" width="96" height="80" loading="lazy" decoding="async">
+                    <div>
+                        <h3><a href="https://github.com/aitesam961/PI-Pico-Rocket-Flight-Computer">Rocket flight computer</a></h3>
+                        <p>A Raspberry Pi Pico flight computer, powered by a LiPo battery.</p>
+                    </div>
+                    <span class="project-type">Embedded</span>
+                </li>
+                <li>
+                    <img class="project-image" src="assets/hotplate.webp" alt="Reflow hotplate PCB render" width="96" height="80" loading="lazy" decoding="async">
+                    <div>
+                        <h3><a href="https://github.com/aitesam961/Reflow_Hotplate">Reflow hotplate</a></h3>
+                        <p>A hotplate for DIY surface-mount electronics assembly.</p>
+                    </div>
+                    <span class="project-type">Hardware</span>
+                </li>
+                <li>
+                    <img class="project-image" src="assets/openadsp.webp" alt="OpenADSP audio processing board" width="96" height="80" loading="lazy" decoding="async">
+                    <div>
+                        <h3><a href="https://github.com/aitesam961/OpenADSP">OpenADSP</a></h3>
+                        <p>An embedded device for digital audio signal processing.</p>
+                    </div>
+                    <span class="project-type">Audio / DSP</span>
+                </li>
+                <li>
+                    <img class="project-image" src="assets/processor.webp" alt="16-bit processor simulation waveforms" width="96" height="80" loading="lazy" decoding="async">
+                    <div>
+                        <h3><a href="https://github.com/aitesam961/16-Bit-RISC-Core-Processor">16-bit RISC processor</a></h3>
+                        <p>A processor with a custom instruction set, written in Verilog.</p>
+                    </div>
+                    <span class="project-type">Digital design</span>
+                </li>
+            </ul>
+        </section>
+
+        <section id="services" aria-labelledby="services-heading">
+            <h2 id="services-heading">Services</h2>
+            <dl class="services">
+                <div>
+                    <dt>Hardware design</dt>
+                    <dd>Embedded electronics, PCB design, and IoT prototypes.</dd>
                 </div>
-                <div class="col-lg-7 col-md-12 p-0" data-aos="fade-left" data-aos-delay="700">
-                    <figure>
-                        <img class="inner-img" src="images/Imdex_Laptop.jpg" alt="services">
-                        <img class="out-sideimg" src="images/Intel_Proc.jpg" alt="services">
-                    </figure>
+                <div>
+                    <dt>Programming & firmware</dt>
+                    <dd>Device firmware, automation, and Linux SBC applications.</dd>
                 </div>
+                <div>
+                    <dt>Technical support</dt>
+                    <dd>Design reviews, troubleshooting, and manufacturing support.</dd>
+                </div>
+                <div>
+                    <dt>Technical documentation</dt>
+                    <dd>Product specifications, datasheets, and application notes.</dd>
+                </div>
+            </dl>
+        </section>
+
+        <section id="contact" class="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Get in touch</h2>
+            <p>Have a project in mind? Let’s talk.</p>
+            <form class="contact-form" action="https://formspree.io/f/xyekjobk" method="post">
+                <div class="form-row">
+                    <div>
+                        <label for="contact-name">Name</label>
+                        <input id="contact-name" name="name" type="text" autocomplete="name" maxlength="100" required>
+                    </div>
+                    <div>
+                        <label for="contact-email">Your email</label>
+                        <input id="contact-email" name="email" type="email" autocomplete="email" maxlength="254" required>
+                    </div>
+                </div>
+                <div>
+                    <label for="contact-message">Message</label>
+                    <textarea id="contact-message" name="message" rows="5" maxlength="5000" required></textarea>
+                </div>
+                <button type="submit">Send message</button>
+            </form>
+            <div class="links">
+                <a href="https://twitter.com/TheCactus961">X / Twitter</a>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!--Section-2-->
-    <section class="section-2">
-        
-        <div class="container">
-            
-            <div class="row">
-                <div class="col-lg-4 col-sm-12 col-12 box-1">
-                    <div class="row box" data-aos="fade-left" data-aos-delay="300">
-                        <div class="col-lg-2 col-sm-12">
-                            <i class="fa fa-desktop" aria-hidden="true"></i>
-                        </div>
-                        <div class="col-lg-10 col-sm-12">
-                            <h4><a href="services.html">Hardware Design</a></h4>
-                            <p>Engineering Solutions & Embedded Harwdare Design for new Products and Automated Control Systems.</p>
-                            <p><a href="services.html"><img src="images/plus.png" alt="plus"></a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-12 col-12 box-2">
-                    <div class="row box" data-aos="fade-left" data-aos-delay="500">
-                        <div class="col-lg-2 col-sm-12">
-                            <i class="fa fa-code" aria-hidden="true"></i>
-                        </div>
-                        <div class="col-lg-10 col-sm-12">
-                            <h4><a href="services.html">Firmware Dev</a></h4>
-                            <p>Programming and Firmware Development for IoT Solutions, Advanced Embedded Systems with perfection and Accuracy.</p>
-                            <p><a href="services.html"><img src="images/plus.png" alt="plus"></a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-12 col-12 box-3">
-                    <div class="row box" data-aos="fade-left" data-aos-delay="500">
-                        <div class="col-lg-2 col-sm-12">
-                            <i class="fa fa-comments" aria-hidden="true"></i>
-                        </div>
-                        <div class="col-lg-10 col-sm-12">
-                            <h4><a href="services.html">Technical Support</a></h4>
-                            <p>Consultation and Review of Engineering Designs with Professional approach to Manufacturability & Regulatory Compliancy.</p>
-                            <p><a href="services.html"><img src="images/plus.png" alt="plus"></a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-     
-
-    <!--Section-5-->
-    <section class="section-4">
-        <div class="container">
-            <div class="row heading">
-                <div class="col-sm-6 col-12">
-                    <h3>Read my Articles,<span>Blog posts, Reviews </span>& more...</h3>
-                </div>
-                <div class="col-sm-6 col-12">
-                    <a href="blog.html" class="btn btn-success">View full Blog</a>
-                </div>
-            </div>
-            <!--/row-->
-            <div class="row">
-                <div class="col-lg-4 col-sm-12 col-12 box-1"  data-aos="fade-right" data-aos-delay="300">
-                    <figure class="figure">
-                        <a href="ULP-Embedded-Systems.html"><img src="Blog-Images\mother-board.jpg" class="figure-img img-fluid" alt="blog"></a>
-                        <figcaption class="figure-caption">
-                            <h2><a href="my_web.html">Power Saving techniques in Ultra-Low Power Embedded Systems</a></h2>
-                            <p> A Practical Design Guide</p>
-                            <a href="ULP-Embedded-Systems.html" class="btn btn-success">+ more</a>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-lg-8 col-sm-12 col-12" data-aos="fade-left" data-aos-delay="300">
-                    <div class="row" >
-                        <div class="col-sm-6 col-12 box-2">
-                            <figure class="figure">
-                                <a href="brokenlink.html"><img src="images/HID_PCB.jpg" class="figure-img img-fluid" alt="blog"></a>
-                            </figure>
-                        </div>
-                        <div class="col-sm-6 col-12 box-3">
-                            <h4><a href="blog.html">Embedded Harwdare Design & Semiconductor Shortage</a></h4>
-                            <h5>Semiconductor shortage and Crisis of Electronics Manufacturing Industry</h5>
-                            <a href="brokenlink.html" class="btn btn-success">+ more</a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-6 col-12 box-4">
-                            <figure class="figure">
-                                <a href="blog.html"><img src="images/artificial-intelligence.jpg" class="figure-img img-fluid" alt="blog"></a>
-                            </figure>
-                        </div>
-                        <div class="col-sm-6 col-12 box-5">
-                            <h4><a href="blog.html">AI is transforming the IoT Industry </a></h4>
-                            <h5>Should we adopt the TinyML operated Household appliances? </h5>
-                            <a href="brokenlink.html" class="btn btn-success">+ more</a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-6 col-12 box-6">
-                            <figure class="figure">
-                                <a href="blog.html"><img src="images/KB_1.jpg" class="figure-img img-fluid" alt="blog"></a>
-                            </figure>
-                        </div>
-                        <div class="col-sm-6 col-12 box-7">
-                            <h4><a href="blogg.html">Mechanical Keyboards :<br>A Rabbit-Hole of Hobby</a></h4>
-                            <h5>From Boring Membrane to GATERON Red. It does makes a difference</h5>
-                            <a href="blogg_single.html" class="btn btn-success">+ more</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--container-->
-    </section>
-   
-   
-    <section class="section-7">
-        <!-- Footer -->
-        <footer class="page-footer font-small stylish-color-dark">
-
-            <!-- Footer Links -->
-            <div class="container text-center text-md-left">
-
-                <!-- Grid row -->
-                <div class="row">
-
-                    <!-- Grid column -->
-                    <div class="col-lg-5 col-sm-12 mx-auto box-1">
-
-                        <!-- Content -->
-                        <a href="index.html"><img src="images/aitesam_logo2.png" alt="footer-logo"></a>
-                        <p>
-                            <b><i>"When you want to know how things really work, study them when they're coming apart."</i></b>
-                            <br>
-                            <br>
-                            <b>William Gibson, Zero History</b>
-                        </p>
-
-                    </div>
-                    <!-- Grid column -->
-
-                    <hr class="clearfix w-100 d-md-none">
-
-                    <!-- Grid column -->
-                    <div class="col-lg-2 col-sm-4 box-2 mx-auto">
-
-                        <!-- Links -->
-                        <h5>Site Navigation</h5>
-
-                        <ul class="list-unstyled">
-                            <li>
-                                <a href="index.html">go to home</a>
-                            </li>
-                            <li>
-                                <a href="services.html">services</a>
-                            </li>
-                            <li>
-                                <a href="portfolio.html">portfolio</a>
-                            </li>
-                            <li>
-                                <a href="blog.html">read blog</a>
-                            </li>
-                            <li>
-                                <a href="contact.html">contact us</a>
-                            </li>
-                            <li>
-                                <a href="contact.html">product support</a>
-                            </li>
-                        </ul>
-
-                    </div>
-                    <!-- Grid column -->
-
-                    <hr class="clearfix w-100 d-md-none">
-
-                    <!-- Grid column -->
-                    <div class="col-lg-2 col-sm-4 box-3 mx-auto">
-
-                        <!-- Links -->
-                        <h5>information</h5>
-
-                        <ul class="list-unstyled">
-                            <li>
-                                <a href="#!">user login</a>
-                            </li>
-                            <li>
-                                <a href="#!">creat new account</a>
-                            </li>
-                            <li>
-                                <a href="#!">checkout</a>
-                            </li>
-                            <li>
-                                <a href="#!">my cart</a>
-                            </li>
-                            <li>
-                                <a href="#!">other information</a>
-                            </li>
-                        </ul>
-
-                    </div>
-                    <!-- Grid column -->
-
-                    <hr class="clearfix w-100 d-md-none">
-
-                    <!-- Grid column -->
-                    <div class="col-lg-2 col-sm-4 box-4 mx-auto">
-
-                        <!-- Links -->
-                        <h5>policies & Info</h5>
-
-                        <ul class="list-unstyled">
-                            <li>
-                                <a href="#!">Terms Conditions </a>
-                            </li>
-                            <li>
-                                <a href="#!">website polocy</a>
-                            </li>
-                            <li>
-                                <a href="#!">Policy for Sellers </a>
-                            </li>
-                            <li>
-                                <a href="#!">Policy for Buyers</a>
-                            </li>
-                            <li>
-                                <a href="#!">Shipping & Refund </a>
-                            </li>
-                            <li>
-                                <a href="#!">Wholesale Policy</a>
-                            </li>
-                        </ul>
-
-                    </div>
-                    <!-- Grid column -->
-
-                </div>
-                <!-- Grid row -->
-
-            </div>
-            <!-- Footer Links -->
-
-            <!-- Copyright -->
-            <div class="footer-copyright text-center">
-                <div class="gradient"></div>
-                <p>© 2025, All Rights reserved. Designed by<a href="about.html"><br> Muhammad Aitesam</a></p>
-            </div>
-            <!-- Copyright -->
-        </footer>
-        <!-- Footer -->
-    </section>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
-    <script src="js/animate.js"></script>
-    <script src="js/custom.js"></script>
-    <script>
-        $(document).on('click', '[data-toggle="lightbox"]', function(event) {
-            event.preventDefault();
-            $(this).ekkoLightbox();
-        });
-
-    </script>
+    <footer>
+        <img class="footer-logo" src="assets/aitesam-logo.png" alt="Aitesam" width="251" height="110">
+        <span>Hardware, firmware & curiosity.</span>
+    </footer>
 </body>
-
 </html>

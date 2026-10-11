@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <canvas id="water-background" aria-hidden="true"></canvas>
+    <button id="motion-toggle" type="button" aria-pressed="false" hidden>Pause animation</button>
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="intro">
         <img class="header-logo" src="assets/aitesam-logo.png" alt="Aitesam" width="251" height="110">
@@ -155,5 +157,6 @@
         <img class="footer-logo" src="assets/aitesam-logo.png" alt="Aitesam" width="251" height="110">
         <span>Hardware, firmware & curiosity.</span>
     </footer>
+    <script src="water.js" defer></script>
 </body>
 </html>

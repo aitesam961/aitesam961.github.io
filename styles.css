@@ -18,7 +18,7 @@ body::before {
     content: "";
     position: fixed;
     inset: 0;
-    z-index: -1;
+    z-index: 0;
     pointer-events: none;
     background: url("assets/collection-objects-objects-from-collection-digital-technology_1191225-1505.avif") repeat;
     background-size: 740px 740px;

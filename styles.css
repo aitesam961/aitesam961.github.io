@@ -14,39 +14,24 @@
 
 * { box-sizing: border-box; }
 
-#water-background {
+body::before {
+    content: "";
     position: fixed;
     inset: 0;
-    width: 100%;
-    height: 100%;
+    z-index: -1;
     pointer-events: none;
-    z-index: 0;
+    background: url("assets/collection-objects-objects-from-collection-digital-technology_1191225-1505.avif") repeat;
+    background-size: 740px 740px;
+    opacity: 0.12;
 }
 
 header, main, footer { position: relative; z-index: 1; }
 .intro, footer { background: #fff; }
 .skip-link { z-index: 3; }
 
-#motion-toggle {
-    position: fixed;
-    top: 12px;
-    right: 16px;
-    z-index: 2;
-    min-height: 44px;
-    padding: 8px 12px;
-    border: 1px solid var(--line);
-    border-radius: 7px;
-    background: #fff;
-    color: var(--accent-text);
-    font: inherit;
-    font-size: 0.75rem;
-    cursor: pointer;
-}
-
-#motion-toggle:disabled { cursor: default; }
-
 @media print {
-    #water-background, #motion-toggle { display: none; }
+    :root { background: #fff; }
+    body::before { display: none; }
 }
 
 body {
@@ -70,6 +55,10 @@ a:focus-visible, input:focus-visible, textarea:focus-visible, button:focus-visib
 }
 
 h1, h2, h3, p { margin: 0; }
+
+h1, h2, h3, .intro nav a {
+    font-family: "Comfortaa", "Segoe UI", sans-serif;
+}
 
 h1 {
     font-size: clamp(1.65rem, 4vw, 2rem);
